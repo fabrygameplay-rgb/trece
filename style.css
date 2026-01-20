@@ -1,10 +1,18 @@
-#título {
+/* -------------------- ESTILOS BASE -------------------- */
+body {
+    background-image: url("FotosGuinda/Nazca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1#título {
     text-align: center;
     text-decoration: underline;
     color: sandybrown;
     text-shadow: black 2px 1px 2px;
     text-transform: capitalize;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .subtítulos {
@@ -14,25 +22,11 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.conceptos1 {
-    text-align: justify;
-    color: black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px 20px 0px 0px;
-}
-
-#conceptos2 {
+.conceptos1, #conceptos2, #conceptos3, .descripciones1, .descripciones2 {
     text-align: justify;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px 20px 0 30px;
-}
-
-#conceptos3 {
-    text-align: justify;
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px 20px 0px 0px;
+    margin: 0 20px 10px 20px;
+    font-size: 16px;
 }
 
 main {
@@ -41,33 +35,20 @@ main {
 
 #lista, #curiosities {
     margin: 0 20px 0 30px;
-    color:royalblue;
+    color: royalblue;
     text-decoration: underline;
 }
 
-.li1 {
-    color: gold;
-    font-size: 20px;
-    cursor:pointer;
-    margin-left: 15px;
-}
-
-.li:hover {
-    color: blue;
-    transform: translate(5px);
-}
-
-.li2 {
+.li1, .li2 {
     color: gold;
     font-size: 20px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .descripciones1, .descripciones2 {
     font-size: 16px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 15px;
-    color: white;
 }
 
 footer {
@@ -76,32 +57,33 @@ footer {
     padding: 5px 0;
 }
 
-body {
-    background-image: url("FotosGuinda/Nazca.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #bloqueFlexible {
     display: flex;
     gap: 20px;
-} 
+    flex-wrap: wrap;
+}
+
+/* -------------------- IMÁGENES -------------------- */
+#bloqueFlexible-derecho {
+    position: relative;
+    width: 420px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
 
 .líneas {
     position: absolute;
     top: 0;
     left: 0;
-    width: 420px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border: solid black 4px;
-
     opacity: 0;
-    transform: translateY(2px);
+    transform: translateY(20px);
     pointer-events: none;
-
-    transition:
-        opacity 0.6s ease-out,
-        transform 0.6s ease-out;
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .líneas.activa {
@@ -110,6 +92,7 @@ body {
     pointer-events: auto;
 }
 
+/* -------------------- REFERENCIA -------------------- */
 #referencia {
     text-align: center;
     margin-top: 12px;
@@ -121,11 +104,9 @@ body {
     color: lightblue;
     text-decoration: underline;
     opacity: 0;
-    transform: translateY(-10px) scale(0.95);
+    transform: translateY(10px) scale(0.95);
     pointer-events: none;
-    transition: 
-        opacity 0.6s ease-out, 
-        transform 0.6s ease-out;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 #referencia a.activa {
@@ -134,23 +115,9 @@ body {
     pointer-events: auto;
 }
 
-#bloqueFlexible-derecho {
-    position: relative;
-    width: 420px;
-    height: 400px;
-    margin-left: 100px;
-    margin-top: 50px;
-}
+/* -------------------- RESPONSIVE -------------------- */
 
-#fotos {
-    position: relative;
-    width: 420px;
-    height: 400px;
-}
-
-/* Media Queries:
-
-/* iPhones 8/SE y celulares pequeños (ancho < 414px) */
+/* Celulares pequeños (iPhone 8, SE y similares, ancho < 414px) */
 @media (max-width: 414px) {
     #bloqueFlexible {
         flex-direction: column;
@@ -166,16 +133,22 @@ body {
     }
 
     .líneas {
+        position: relative;
         width: 100%;
         height: auto;
+        border-width: 2px;
     }
 
     #referencia a {
         font-size: 18px;
     }
+
+    .conceptos1, #conceptos2, #conceptos3, .descripciones1, .descripciones2 {
+        font-size: 14px;
+    }
 }
 
-/* iPhones grandes y Android modernos (414px a 768px) */
+/* Celulares medianos (iPhone grandes y Android modernos, 415px a 768px) */
 @media (min-width: 415px) and (max-width: 768px) {
     #bloqueFlexible {
         flex-direction: row;
@@ -199,10 +172,13 @@ body {
     #referencia a {
         font-size: 20px;
     }
+
+    .conceptos1, #conceptos2, #conceptos3, .descripciones1, .descripciones2 {
+        font-size: 15px;
+    }
 }
 
-/* Tablets (768px a 1024px) */
-
+/* Tablets (769px a 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
     #bloqueFlexible {
         flex-direction: row;
@@ -224,17 +200,5 @@ body {
 
     #referencia a {
         font-size: 22px;
-    }
-}
-
-@media (max-width: 414px) {
-    .conceptos1, #conceptos2, #conceptos3, .descripciones1, .descripciones2 {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 415px) and (max-width: 768px) {
-    .conceptos1, #conceptos2, #conceptos3, .descripciones1, .descripciones2 {
-        font-size: 15px;
     }
 }
