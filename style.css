@@ -57,13 +57,10 @@ footer {
     padding: 5px 0;
 }
 
-/* -------------------- BLOQUE FLEXIBLE -------------------- */
 #bloqueFlexible {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    align-items: flex-start;
-    margin-top: 20px;
 }
 
 /* -------------------- IMÁGENES -------------------- */
@@ -71,8 +68,8 @@ footer {
     position: relative;
     width: 420px;
     height: 400px;
-    margin-left: 20px;
-    margin-top: 0;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
 .líneas {
@@ -126,14 +123,13 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        margin-top: 10px;
     }
 
     #bloqueFlexible-derecho {
         width: 90%;
         height: auto;
         margin-left: 0;
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .líneas {
@@ -159,14 +155,13 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
-        margin-top: 15px;
     }
 
     #bloqueFlexible-derecho {
         width: 350px;
         height: auto;
         margin-left: 0;
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .líneas {
@@ -195,7 +190,7 @@ footer {
         width: 420px;
         height: auto;
         margin-left: 20px;
-        margin-top: 0;
+        margin-top: 30px;
     }
 
     .líneas {
