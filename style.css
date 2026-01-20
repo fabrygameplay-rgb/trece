@@ -1,3 +1,13 @@
+/* -------------------- ESTILOS BASE -------------------- */
+
+body {
+    background-image: url("FotosGuinda/Nazca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #título {
     text-align: center;
     text-decoration: underline;
@@ -76,29 +86,35 @@ footer {
     padding: 5px 0;
 }
 
-body {
-    background-image: url("FotosGuinda/Nazca.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #bloqueFlexible {
     display: flex;
     gap: 20px;
 } 
 
+#bloqueFlexible-derecho {
+    position: relative;
+    width: 420px;
+    height: 400px; /* solo para escritorio */
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#fotos {
+    position: relative;
+    width: 420px;
+    height: 400px; /* solo para escritorio */
+}
+
 .líneas {
-    position: absolute;
+    position: absolute; /* absoluto en escritorio */
     top: 0;
     left: 0;
     width: 420px;
     height: 400px;
     border: solid black 4px;
-
     opacity: 0;
     transform: translateY(2px);
     pointer-events: none;
-
     transition:
         opacity 0.6s ease-out,
         transform 0.6s ease-out;
@@ -134,20 +150,6 @@ body {
     pointer-events: auto;
 }
 
-#bloqueFlexible-derecho {
-    position: relative;
-    width: 420px;
-    height: 400px;
-    margin-left: 100px;
-    margin-top: 50px;
-}
-
-#fotos {
-    position: relative;
-    width: 420px;
-    height: 400px;
-}
-
 /* -------------------- RESPONSIVE -------------------- */
 
 /* Celulares pequeños: iPhone 8, SE y similares (ancho <= 414px) */
@@ -158,23 +160,20 @@ body {
         gap: 15px;
     }
 
-    #bloqueFlexible-derecho {
+    #bloqueFlexible-derecho,
+    #fotos {
         width: 90%;
-        height: auto;
+        height: auto; /* se adapta al contenido */
         margin-left: 0;
         margin-top: 0;
     }
 
-    #fotos {
-        width: 100%;
-        height: auto;
-    }
-
     .líneas {
-        position: relative;
+        position: relative; /* deja el flujo normal */
         width: 100%;
         height: auto;
         border-width: 2px;
+        margin-bottom: 10px;
     }
 
     #referencia a {
@@ -206,21 +205,20 @@ body {
         align-items: flex-start;
     }
 
-    #bloqueFlexible-derecho {
+    #bloqueFlexible-derecho,
+    #fotos {
         width: 350px;
         height: auto;
         margin-left: 0;
         margin-top: 0;
     }
 
-    #fotos {
-        width: 100%;
-        height: auto;
-    }
-
     .líneas {
+        position: relative;
         width: 100%;
         height: auto;
+        border-width: 2px;
+        margin-bottom: 10px;
     }
 
     #referencia a {
@@ -245,21 +243,19 @@ body {
         align-items: flex-start;
     }
 
-    #bloqueFlexible-derecho {
+    #bloqueFlexible-derecho,
+    #fotos {
         width: 420px;
         height: auto;
         margin-left: 20px;
         margin-top: 0;
     }
 
-    #fotos {
-        width: 100%;
-        height: auto;
-    }
-
     .líneas {
+        position: relative;
         width: 100%;
         height: auto;
+        margin-bottom: 10px;
     }
 
     #referencia a {
