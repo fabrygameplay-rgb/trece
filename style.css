@@ -27,21 +27,21 @@ body {
 .conceptos1 {
     text-align: justify;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px 20px 0px 0px;
 }
 
 #conceptos2 {
     text-align: justify;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 20px 20px 0 30px;
 }
 
 #conceptos3 {
     text-align: justify;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px 20px 0px 0px;
 }
 
@@ -51,14 +51,14 @@ main {
 
 #lista, #curiosities {
     margin: 0 20px 0 30px;
-    color: royalblue;
+    color:royalblue;
     text-decoration: underline;
 }
 
 .li1 {
     color: gold;
     font-size: 20px;
-    cursor: pointer;
+    cursor:pointer;
     margin-left: 15px;
 }
 
@@ -75,7 +75,7 @@ main {
 
 .descripciones1, .descripciones2 {
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 15px;
     color: white;
 }
@@ -89,9 +89,7 @@ footer {
 #bloqueFlexible {
     display: flex;
     gap: 20px;
-}
-
-/* -------------------- BLOQUES DE IMÁGENES -------------------- */
+} 
 
 #bloqueFlexible-derecho {
     position: relative;
@@ -99,6 +97,7 @@ footer {
     height: 400px; /* solo para escritorio */
     margin-left: 100px;
     margin-top: 50px;
+    margin-bottom: 30px; /* nuevo margen inferior para separar de curiosidades */
 }
 
 #fotos {
@@ -108,13 +107,12 @@ footer {
 }
 
 .líneas {
-    position: absolute; /* absoluto solo en escritorio */
+    position: absolute; /* absoluto en escritorio */
     top: 0;
     left: 0;
     width: 420px;
     height: 400px;
     border: solid black 4px;
-
     opacity: 0;
     transform: translateY(2px);
     pointer-events: none;
@@ -142,8 +140,8 @@ footer {
     opacity: 0;
     transform: translateY(-10px) scale(0.95);
     pointer-events: none;
-    transition:
-        opacity 0.6s ease-out,
+    transition: 
+        opacity 0.6s ease-out, 
         transform 0.6s ease-out;
 }
 
@@ -166,9 +164,10 @@ footer {
     #bloqueFlexible-derecho,
     #fotos {
         width: 90%;
-        height: auto; /* se adapta al contenido */
+        height: auto;
         margin-left: 0;
         margin-top: 0;
+        margin-bottom: 30px; /* mantiene margen inferior */
     }
 
     .líneas {
@@ -177,7 +176,7 @@ footer {
         height: auto;
         border-width: 2px;
         margin-bottom: 10px;
-        display: none; /* solo mostrar la activa */
+        display: none;
     }
 
     .líneas.activa {
@@ -219,6 +218,7 @@ footer {
         height: auto;
         margin-left: 0;
         margin-top: 0;
+        margin-bottom: 30px; /* mantiene margen inferior */
     }
 
     .líneas {
@@ -262,6 +262,7 @@ footer {
         height: auto;
         margin-left: 20px;
         margin-top: 0;
+        margin-bottom: 30px; /* mantiene margen inferior */
     }
 
     .líneas {
