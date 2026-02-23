@@ -165,11 +165,14 @@ footer {
 
     #bloqueFlexible-derecho {
         width: 90%;
+        height: auto;
         margin: 0 auto;
+        padding-bottom: 10px;
     }
 
     #fotos {
         width: 100%;
+        height: auto;
         margin: 0 auto;
         display: block;
     }
