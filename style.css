@@ -1,4 +1,6 @@
-/* -------------------- ESTILOS BASE -------------------- */
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-image: url("FotosGuinda/Nazca.jpg");
@@ -93,21 +95,22 @@ footer {
 
 #bloqueFlexible-derecho {
     position: relative;
-    width: 420px;
-    height: 400px; /* solo para escritorio */
-    margin-left: 100px;
+    width: 350px;
+    height: 350px;
+    margin-left: 90px;
     margin-top: 50px;
-    margin-bottom: 30px; /* nuevo margen inferior para separar de curiosidades */
+    margin-bottom: 30px; 
 }
 
 #fotos {
     position: relative;
-    width: 420px;
-    height: 400px; /* solo para escritorio */
+    width: 100%;
+    height: 400px; 
+    margin-right: 40px;
 }
 
 .líneas {
-    position: absolute; /* absoluto en escritorio */
+    position: absolute;
     top: 0;
     left: 0;
     width: 420px;
@@ -151,9 +154,6 @@ footer {
     pointer-events: auto;
 }
 
-/* -------------------- RESPONSIVE -------------------- */
-
-/* Celulares pequeños: iPhone 8, SE y similares (ancho <= 414px) */
 @media (max-width: 414px) {
     #bloqueFlexible {
         flex-direction: column;
@@ -167,7 +167,7 @@ footer {
         height: auto;
         margin-left: 0;
         margin-top: 0;
-        margin-bottom: 30px; /* mantiene margen inferior */
+        margin-bottom: 30px;
     }
 
     .líneas {
@@ -202,7 +202,6 @@ footer {
     }
 }
 
-/* Celulares medianos: iPhone grandes y Android modernos (415px a 768px) */
 @media (min-width: 415px) and (max-width: 768px) {
     #bloqueFlexible {
         flex-direction: row;
@@ -262,7 +261,7 @@ footer {
         height: auto;
         margin-left: 20px;
         margin-top: 0;
-        margin-bottom: 30px; /* mantiene margen inferior */
+        margin-bottom: 30px;
     }
 
     .líneas {
