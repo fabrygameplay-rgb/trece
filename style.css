@@ -201,6 +201,18 @@ footer {
     #bloqueFlexible-izquierdo {
         width: 100%;
     }
+
+    #referencia {
+        width: 100%;
+        text-align: center;
+    }
+
+    #referencia a {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
 }
 
 @media (min-width: 415px) and (max-width: 768px) {
