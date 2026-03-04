@@ -269,7 +269,7 @@ footer {
 @media (min-width: 769px) and (max-width: 1024px) {
     #bloqueFlexible {
         flex-direction: row;
-        gap: 20px;
+        gap: 10px;
         justify-content: left;
         align-items: flex-start;
     }
@@ -278,6 +278,7 @@ footer {
         flex: 1;
         min-width: 280px;
         margin-right: 30px;
+        padding-left: 0px;
     }
 
     #fotos {
@@ -314,4 +315,5 @@ footer {
     body {
         margin-right: 10px;
     }
+
 }
