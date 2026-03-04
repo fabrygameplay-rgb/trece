@@ -277,7 +277,7 @@ footer {
     #bloqueFlexible-derecho {
         flex: 1;
         min-width: 280px;
-        margin-right: 20px;
+        margin-right: 30px;
     }
 
     #fotos {
@@ -302,6 +302,11 @@ footer {
         display: block;
     }
 
+    #referencia {
+        margin-right: 10px;
+        width: 280px;
+        text-align: center;
+    }
     #referencia a {
         font-size: 22px;
     }
