@@ -237,7 +237,7 @@ footer {
         height: auto;
         margin-left: 0;
         margin-top: 0;
-        margin-bottom: 30px; /* mantiene margen inferior */
+        margin-bottom: 30px;
     }
 
     .líneas {
@@ -266,7 +266,6 @@ footer {
     }
 }
 
-/* Tablets: 769px a 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
     #bloqueFlexible {
         flex-direction: row;
@@ -275,17 +274,19 @@ footer {
         align-items: flex-start;
     }
 
-    #bloqueFlexible-derecho,
+    #bloqueFlexible-derecho {
+        flex: 1;
+        min-width: 280px;
+    }
+
     #fotos {
-        width: 320px;
+        width: 100%;
         height: auto;
-        margin-left: 20px;
-        margin-top: 0;
-        margin-bottom: 30px;
     }
 
     #bloqueFlexible-izquierdo {
-        width: 600px;
+        flex: 1;
+        min-width: 300px;
     }
 
     .líneas {
