@@ -269,7 +269,7 @@ footer {
 @media (min-width: 769px) and (max-width: 1024px) {
     #bloqueFlexible {
         flex-direction: row;
-        gap: 10px;
+        gap: 6px;
         justify-content: left;
         align-items: flex-start;
     }
@@ -304,9 +304,10 @@ footer {
     }
 
     #referencia {
-        margin-right: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
         width: 280px;
-        text-align: center;
+        text-align: left;
     }
     #referencia a {
         font-size: 22px;
