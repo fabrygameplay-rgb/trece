@@ -232,15 +232,15 @@ footer {
 
     #bloqueFlexible-derecho,
     #fotos {
-        width: 300px;
-        height: auto;
+        width: 320px;
+        height: 150px;
         margin-left: 20px;
         margin-top: 0;
         margin-bottom: 30px;
     }
 
     .descripciones1 {
-        width: 180px;
+        width: 100px;
     }
 
     .líneas {
