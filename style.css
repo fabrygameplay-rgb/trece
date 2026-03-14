@@ -316,6 +316,18 @@ footer {
 
     body {
         margin-right: 10px;
+        font-size: 14px;
+    }
+
+    #referencia {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+    #referencia a {
+        display: block;
+        margin: 0 auto;
     }
 
 }
