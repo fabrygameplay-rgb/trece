@@ -280,17 +280,12 @@ footer {
         margin: 0 auto;
     }
 
-    p, li, .descripciones1, .descripciones2, .conceptos1, #conceptos3 {
+    p, li, .descripciones1, .descripciones2, .conceptos1, .conceptos2, #conceptos3 {
         font-size: 0.9em;
     }
 
-    #conceptos2, .li2, #lista {
+    .li2, #lista, #curiosities {
         font-size: 1.1em;
-
-    }
-
-    .subtítulos:nth-child(1) {
-        color:seagreen;
     }
 
 }
