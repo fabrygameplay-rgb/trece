@@ -220,12 +220,12 @@ footer {
         margin: 0 auto;     
     }
 
-    .subtítulos {
+    .subtítulos{
         color: seagreen;
         text-decoration: underline;
         text-align: left;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+        text-shadow: 0.5px 0.5px 1px rgba(0,60,40,0.8);
     }
 
     #lista, #curiosities {
@@ -238,6 +238,7 @@ footer {
 }
 
 @media (min-width: 415px) and (max-width: 768px) {
+
     #bloqueFlexible {
         flex-direction: row;
         flex-wrap: wrap;
@@ -303,12 +304,12 @@ footer {
         font-size: 1.1em;
     }
 
-    .subtítulos {
+    .subtítulos{
         color: seagreen;
         text-decoration: underline;
         text-align: left;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+        text-shadow: 0.5px 0.5px 1px rgba(0,60,40,0.8);
     }
 
     #lista, #curiosities {
@@ -325,6 +326,7 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
     #bloqueFlexible {
         flex-direction: row;
         gap: 6px;
@@ -376,12 +378,12 @@ footer {
         margin-right: 10px;
     }
 
-    .subtítulos {
+    .subtítulos{
         color: seagreen;
         text-decoration: underline;
         text-align: left;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+        text-shadow: 0.5px 0.5px 1px rgba(0,60,40,0.8);
     }
 
     #lista, #curiosities {
