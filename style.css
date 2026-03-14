@@ -279,6 +279,10 @@ footer {
         display: block;
         margin: 0 auto;
     }
+
+    p, li, .descripciones1, .descripciones2, .conceptos1, #conceptos2, #conceptos3 {
+        font-size: 0.9em;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
