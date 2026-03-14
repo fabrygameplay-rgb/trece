@@ -264,6 +264,21 @@ footer {
     #conceptos2, #conceptos3, .descripciones1, .descripciones2 {
         font-size: 15px;
     }
+
+    body {
+        font-size: 14px;
+    }
+
+    #referencia {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    #referencia a {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -316,18 +331,6 @@ footer {
 
     body {
         margin-right: 10px;
-        font-size: 14px;
-    }
-
-    #referencia {
-    width: 100%;
-    text-align: center;
-    margin: 10px auto;
-}
-
-    #referencia a {
-        display: block;
-        margin: 0 auto;
     }
 
 }
