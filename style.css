@@ -155,7 +155,7 @@ footer {
     pointer-events: auto;
 }
 
-    @media (max-width: 414px) {
+@media (max-width: 414px) {
 
     #bloqueFlexible {
         display: flex;
@@ -218,6 +218,21 @@ footer {
         display: block;
         width: fit-content;
         margin: 0 auto;     
+    }
+
+    .subtítulos {
+        color: seagreen;
+        text-decoration: underline;
+        text-align: left;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    }
+
+    #lista, #curiosities {
+        margin: 0 20px 0 30px;
+        color: royalblue;
+        text-decoration: underline;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
     }
 
 }
@@ -288,6 +303,25 @@ footer {
         font-size: 1.1em;
     }
 
+    .subtítulos {
+        color: seagreen;
+        text-decoration: underline;
+        text-align: left;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    }
+
+    #lista, #curiosities {
+        margin: 0 20px 0 30px;
+        color: royalblue;
+        text-decoration: underline;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    }
+
+    #bloqueFlexible-derecho{
+        margin-left:0;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -340,6 +374,21 @@ footer {
 
     body {
         margin-right: 10px;
+    }
+
+    .subtítulos {
+        color: seagreen;
+        text-decoration: underline;
+        text-align: left;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    }
+
+    #lista, #curiosities {
+        margin: 0 20px 0 30px;
+        color: royalblue;
+        text-decoration: underline;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
     }
 
 }
